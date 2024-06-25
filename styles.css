@@ -1,0 +1,97 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #282c34;
+    color: #fff;
+}
+
+
+#game {
+    text-align: center;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+}
+
+
+#stats {
+    margin-bottom: 20px;
+}
+
+#stats p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+#buy-square {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#buy-square:hover {
+    background-color: #45a049;
+}
+
+
+#squares {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+.square {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.square:hover {
+    transform: scale(1.1);
+}
+
+.level-1 {
+    background-color: #4caf50; 
+}
+
+.level-2 {
+    background-color: #2196f3; 
+}
+
+.level-3 {
+    background-color: #ff9800; 
+}
+
+.level-4 {
+    background-color: #e91e63; 
+}
+
+.square:active {
+    transform: scale(0.9);
+}
